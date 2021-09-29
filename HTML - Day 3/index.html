@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Sessions</title>
+    </head>
+    <body>
+        <main>
+            <video height="200px" width="200px" controls>
+                <source src="video.webm" type="video/webm" />
+                <source src="video.ogg" type="video/ogg" />
+                <source src="video.3gp" type="video/3gp" />
+                <source src="video.mp4" type="video/mp4" />
+            </video>
+            <audio height="200px" width="200px" controls>
+                <source src="song.ogg" type="audio/ogg" />
+                <source src="song.mpeg" type="audio/mpeg" />
+                <source src="song.mp3" type="audio/mp3" />
+            </audio>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="profile.html">Profile</a>
+            </nav>
+            <a href="song.mp3" download>Download Songs</a>
+            <section>
+                <h1>Sign Up</h1>
+                <form action="/" method="POST" enctype="multipart/form-data">
+                    <div>
+                        <label>
+                            First Name:
+                            <input type="text" name="firstName" placeholder="First Name" required/>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Last Name:
+                            <input type="text" name="lastName" placeholder="Last Name"/>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Email:
+                            <input type="email" name="email" placeholder="Email" required/>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Photo:
+                            <input type="file" name="photo" accept="image/*"/>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Password:
+                            <input type="password" name="pwd" placeholder="Password"/>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Date Of Birth:
+                            <input type="date" name="dob"/>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Gender:
+                            <select name="gender">
+                                <option value="">Select..</option>
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+                                <option value="O">Others</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Languages:
+                            <label>
+                                English
+                                <input type="checkbox" name="lang" value="English" />
+                            </label>
+                            <label>
+                                Hindi
+                                <input type="checkbox" name="lang" value="Hindi" />
+                            </label>
+                            <label>
+                                Tamil
+                                <input type="checkbox" name="lang" value="Tamil" />
+                            </label>
+                            <label>
+                                Kannada
+                                <input type="checkbox" name="lang" value="Kannada" />
+                            </label>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Nationality
+                            <label>
+                                Indian
+                                <input type="radio" name="nationality" value="Indian" />
+                            </label>
+                            <label>
+                                NRI
+                                <input type="radio" name="nationality" value="Nri" />
+                            </label>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Address</label>
+                        <div>
+                            <textarea name="address"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="tnc" value="agree" />
+                            <a href="/">T&C</a>
+                        </label>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+            <footer>Copyright 2021</footer>
+        </main>
+    </body>
+</html>
