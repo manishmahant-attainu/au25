@@ -1,0 +1,75 @@
+HTML (3 Lectures)
+    Lecture 1
+    1. Introduction to HTML
+    2. Common HTML Terms
+    HTML Elements
+    Attributes
+    Comments in HTML
+    3. Getting Started - HTML Structure
+    Common HTML Tags
+    -title to add a title to page
+    -p for paragraphs
+    -em for empasizing tags
+    -br for line breaks
+    -Headings
+    -Block vs Inline Elements
+    -Lists
+    -Links
+    -Images
+    4. HTML & CSS best coding practices
+    5. HTML Interview Questions
+
+Lecture 2
+    More HTML tags
+    -Table
+    -Forms - (All input elements)
+    -select
+    -[Form validation]
+    -Media (Audio, Video)
+    -Semantics
+    -Accessibilty
+
+Lecture 3
+    HTML Continued (Hands - on)
+
+CSS (6 Lectures)
+
+Lecture 1
+    1.Introduction to CSS
+    2.CSS selectors, properties & values
+    2.Using CSS in a Web Page
+    4.CSS Cascade
+    5.Common CSS Properties
+    -Lengths
+    -Colors
+    -color and background-color
+    -Styling text
+        -font-family
+        -font-size
+        -font-weight
+        -font-style
+        -text-decoration
+        -text-transform
+        -text spacing
+    6.Multiple classes for an element
+    7.Interview Questions
+
+Lecture 2
+    Class and ID Selectors
+    CSS Display Properties
+    CSS Page Layout Properties
+    CSS Margins and Paddings
+    CSS Border
+    CSS Box Model
+    Interview Questions
+
+Lecture 3
+    List Styling
+    CSS Resets
+    Pseudo Classes
+    Shorthand Properties
+    Shadows
+    Border Radius
+    CSS Transitions
+    CSS Transformations
+    Gradients
