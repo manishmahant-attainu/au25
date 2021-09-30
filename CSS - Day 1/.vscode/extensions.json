@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "wesbos.theme-cobalt2",
+    "formulahendry.auto-rename-tag",
+    "graphql.vscode-graphql",
+    "jpoissonnier.vscode-styled-components",
+    "ecmel.vscode-html-css",
+    "abusaidm.html-snippets",
+    "zignd.html-css-class-completion",
+    "ritwickdey.liveserver"
+  ]
+}
