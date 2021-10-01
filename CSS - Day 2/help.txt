@@ -1,0 +1,13 @@
+1. CSS: Styling -> Bootstrap is CSS Framework
+
+External -> separate file
+Internal -> style tag in head tag
+Inline -> style attribute
+
+
+
+CSS Page Layout Properties || Positioning
+CSS Display Properties
+CSS Margins and Paddings
+CSS Border
+CSS Box Model

@@ -1,0 +1,19 @@
+.container-1 {
+  background-color: aqua;
+  display: inline-block;
+}
+
+.container-2 {
+  background-color: blueviolet;
+  margin-top: 50px;
+  border: 2px solid black;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.span-1 {
+  /* display: block; */
+  width: 300px;
+}
