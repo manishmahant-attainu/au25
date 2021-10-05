@@ -1,0 +1,36 @@
+h1,
+p,
+article {
+  color: green;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(194, 199, 118);
+}
+
+article {
+  border: 2px solid red;
+  background-color: burlywood;
+}
+
+div {
+  background-color: rgb(226, 145, 145);
+}
+
+article {
+  position: sticky;
+  top: 10px;
+}
+
+.container {
+  position: relative;
+  top:20px;
+  height: 400px;
+  overflow: scroll;
+}
+
+/* .h1-1, .h1-2, .h1-3  {
+  position: absolute;
+  top: 20px;
+} */
