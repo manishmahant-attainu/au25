@@ -1,0 +1,55 @@
+@import 'variables';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.detail-block  {
+  display: flex;
+
+  .image {
+    height: $image-height;
+    width: $image-width;
+  }
+
+  .info {
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .info__heading  {
+      color: $heading-color;
+    }
+
+    .info__description {
+      color: green;
+    }
+  }
+}
+
+.detail  {
+  display: flex;
+
+  &__image {
+    height: $image-height;
+    width: $image-width;
+  }
+
+  &__info {
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &--heading  {
+      color: $heading-color;
+    }
+
+    &--description {
+      color: green;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+CSS Preprocessors
+scss/sass
+
+scss/sass => css
+sassy css/syntatically awsome style sheet
+
+
+//extra classes
+before
+after
+resets
+transform
+animation
+media query
+
+
+B: Block => Main Parent
+E: Element => Child of Block
+M: Modifiers => Sepecific elements that you  want to modify inside "E"
