@@ -1,0 +1,28 @@
+CSS Preprocessors
+scss/sass
+
+scss/sass => css
+sassy css/syntatically awsome style sheet
+
+//extra classes
+before
+after
+resets
+transform
+animation
+media query
+
+
+B: Block => Main Parent
+E: Element => Child of Block
+M: Modifiers => Sepecific elements that you  want to modify inside "E"
+
+
+CSS frameworks
+Twitter Bootstrap
+Including Bootstrap in a web page
+Bootstrap components
+Bootstrap grid layout
+
+Framework => Have all sufficient tools for complete development
+Library => Specific task
