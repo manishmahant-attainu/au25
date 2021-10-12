@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.li-1 {
+  height: 50px;
+}
+
+.li-2 {
+  height: 100px;
+}
+
+.li-3 {
+  height: 300px;
+}
+
+.li-4 {
+  height: 200px;
+}
+
+.li-5 {
+  height: 250px;
+}
+
+.block-one {
+  width: 100px;
+  height: 100px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(red), color-stop(orange), to(yellow));
+  background-image: linear-gradient(to bottom right, red, orange, yellow);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red));
+  background-image: linear-gradient(to bottom, red);
+}
+
+.block-two {
+  width: 200px;
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(red), color-stop(orange), to(yellow));
+  background-image: linear-gradient(to bottom right, red, orange, yellow);
+}
+
+.detail-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detail-block .image {
+  height: 260px;
+  width: 260px;
+}
+
+.detail-block .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.detail-block .info .info__heading {
+  color: blue;
+}
+
+.detail-block .info .info__description {
+  color: green;
+}
+/*# sourceMappingURL=index.css.map */

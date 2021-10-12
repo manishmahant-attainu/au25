@@ -1,0 +1,81 @@
+@import 'variables';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.block-one::after {
+  content: 'hello';
+}
+
+@mixin general-block($width:1, $height:1) {
+  width: 100px * $width;
+  height: 100px * $height;
+  background-image: linear-gradient(to bottom right, red, orange,yellow);
+}
+
+@mixin height-modifier($times:1) {
+  height: 50px * $times;
+}
+
+// for(i=1; i < 5;  i++) {
+//   if(i === 3) {
+//     do something | call a function
+//   } else {
+//     you do something else | call a function
+//   }
+// }
+
+// for i in range 1,3,1
+//   if(i === 3) {
+//     do something
+//   } else {
+//     you do something else
+//   }
+
+
+@for $i from 1 through 5 {
+  .li-#{$i} {
+    @if $i == 3   {
+      @include height-modifier(6);
+    } @else {
+      @include height-modifier($i);
+    }
+  }
+}
+
+.block-one {
+  @include general-block;
+  background-image: linear-gradient(to bottom,red);
+}
+
+.block-two {
+  @include general-block(2,3);
+}
+
+.detail-block  {
+  display: flex;
+
+  .image {
+    height: $image-height;
+    width: $image-width;
+  }
+
+  .info {
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .info__heading  {
+      color: $heading-color;
+    }
+
+    .info__description {
+      color: green;
+    }
+  }
+}
+
