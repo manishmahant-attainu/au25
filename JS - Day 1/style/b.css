@@ -2,3 +2,23 @@
   background-color: aqua;
   border: 2px solid aqua ;
 }
+
+.color-red {
+  background-color: red;
+  height: 100px;
+}
+
+.color-blue {
+  background-color: blue;
+  height: 100px;
+}
+
+.color-green {
+  background-color: green;
+  height: 100px;
+}
+
+.color-yellow {
+  background-color: yellow;
+  height: 100px;
+}
