@@ -1,0 +1,13 @@
+//extra classes
+before
+after
+resets
+transform
+animation
+media query
+
+
+Operators
+  logical
+  string concatination with "+"
+if, ternary, switch, for, while
