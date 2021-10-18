@@ -1,144 +1,98 @@
-//create a variable
-var name = "Manish";
-var age = "100";
-var percentage = 89.8;
-var isAlive = true;
 
-//create functions
-function sum(a,b) {
-  return a+b;
-}
+function canHaveDL(age) {
+  // switch (age) {
+  //   case age>=18:
 
-//call/execute function
-var c = sum(2,3);
+  //     break;
 
-//print the values
-// console.log(c);
-// console.log(sum(5,3));
+  //   default:
 
-//declaring the variable
-var hello;
-
-// console.log(hello);
-
-//assigning the values to the variable
-hello = "Hello World!!"
-
-//Objects
-var info = {
-  name: "Something",
-  age: 100,
-  isAlive: true,
-  languages: ['eng', 'hi'],
-  user: {
-    img: 'https://adad.sdfsadf.com',
-    aa: {
-      s:'ddd'
-    }
+  //     break;
+  // }
+  if(age >= 18) {
+    return true;
+  } else {
+    return false;
   }
-};
-
-var a = "name";
-
-//Arrays
-var languages = ["Something", 100, true];
-
-// console.log(info.user.aa.s);
-
-// console.log('name==>',typeof name);
-// console.log('age==>',typeof age);
-// console.log('percentage==>',typeof percentage);
-// console.log('isAlive==>',typeof isAlive);
-// console.log('info==>',typeof info);
-// console.log('languages==>',typeof languages);
-
-//Operators
-
-var n1 = 20;
-var n2 = 10;
-var n3 = "20";
-
-// console.log(n1*n2);
-// console.log(n1/n2);
-// console.log(n1%n2);
-// console.log(n1-n2);
-// console.log(n1+n2);
-// console.log(++n1); //21
-// console.log(n1++); //21  || 22
-// console.log(n1--); //22  || 21
-// console.log(n1);
-
-// console.log(n1 == n3); //just checks the value
-// console.log(n1 === n3); // checks the value and the datatype
-// console.log(n1 != n3);
-// console.log(n1 !== n3);
-// console.log(n1 >= n3);
-
-var employeeId = '351';
-var employeeName = 'Takeshi';
-var employeeAge = 20;
-var employeeAddress = 'Home';
-
-// console.log(employeeId !== null);
-// console.log(employeeId !== undefined);
-// console.log(employeeId.length === 0); //1st correct ans
-
-//Is my 'employeeId' empty ?
-// console.log(!employeeId); //false
-
-//Is my 'employeeId' and "employeeName" empty ?
-// console.log(' 1 variables ',employeeId);
-
-// console.log(' 2 variables ',employeeId && employeeName); //Takeshi
-
-// console.log(' 3 variables ',employeeId && employeeName && employeeAge); //Takeshi
-
-// console.log(' 4 variables ',employeeId && employeeName && employeeAge && employeeAddress); //Takeshi
-
-//Is my 'employeeId' or "employeeName" empty ?
-// console.log(employeeId || employeeName); // 351
-
-//If all variables are having values then print true else print false ?
-var isAllVarsNotEmpty = !!employeeId && !!employeeName && !!employeeAge;
-// console.log(isAllVarsNotEmpty);
-
-var isAllVarsNotEmptys = !(!employeeId || !employeeName || !employeeAge);
-// console.log(isAllVarsNotEmptys);
-
-var t3 = '';
-var t1 = 'hello';
-var t2 = 'world';
-var t4 =  '';
-
-//hello world
-// var t3 = t1+' '+t2+' '+'!!!';
-
-t3 += t1; // t3 = t3 + t1 = hello
-t3 += ' '; // t3 = t3 + ' ' = 'hello '
-t3 += t2; // t3 = t3 + t2 = 'hello world'
-
-// console.log(t3)
-
-// Conditions in JS
-if(!(!t1 || !t4)) {
-  //console.log('Data is OK')
-} else {
-  //console.log('Data is 404')
 }
 
-if(!t1) {
-  // console.log('t1 is missing value')
-} else if(!t4) {
-  // console.log('t4 is missing value')
-} else {
-  // console.log('Data is OK')
+console.log(canHaveDL(18));
+
+function getBtnColor(status) {
+  // if(status === 'danger') {
+  //   return 'red';
+  // } else if(status === 'warning') {
+  //   return 'yellow';
+  // } else if(status === 'primary') {
+  //   return 'blue';
+  // } else if(status === 'success') {
+  //   return 'green';
+  // } else {
+  //   return 'grey';
+  // }
+  var output = 'grey';
+  switch (status) {
+    case 'alert':
+    case 'danger':
+      output = 'red';
+      break;
+    case 'warning':
+      output = 'yellow';
+      break;
+    case 'primary':
+      output =  'blue';
+      break;
+    case 'success':
+      output =  'green';
+      break;
+    default:
+      break;
+  }
+  return output;
 }
+console.log(getBtnColor('alert'));
 
-var firstName = 'Ram';
-var lastName =  '';
+// get number of people who are eligible for getting a DL
+// age >= 18
+var ages = [ 10, 15, 18, 12, 23, 30, 5 ];
+//ages[2]
+// iterate through the array
+// while || for loops
 
-var fullName = !lastName ?
-  (true  ? '' : '') :
-  firstName+' '+lastName;
+//While
+var i = 7;
+var numberOfPeople = 0;
+var numberOfPeopleNotEligible = 0;
+while(i < 7) {
+  //perform whatever is written here
+  if(ages[i] >= 18) {
+    numberOfPeople += 1;
+  }
+  ages[i] >= 18 ?
+    numberOfPeople++ : // numberOfPeople = numberOfPeople + 1;
+    numberOfPeopleNotEligible++;
+  //ages[0]
+  //after performing the task increase the value of i
+  i++;
+}
+console.log('while loop ended');
+console.log(numberOfPeople);
 
-// console.log(fullName);
+var arr = [ 10, 20, 15 ];
+
+//loop will run atleast 1 time
+do {
+  //calculate the length  of the array and  store it in a variable;
+
+  //perform whatever is written here
+  if(ages[i] >= 18) {
+    numberOfPeople += 1;
+  }
+  ages[i] >= 18 ?
+    numberOfPeople++ : // numberOfPeople = numberOfPeople + 1;
+    numberOfPeopleNotEligible++;
+  //ages[0]
+  //after performing the task increase the value of i
+  i++;
+}
+while(i < 7)
