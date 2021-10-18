@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doubt Class - 1</title>
+  <link rel="stylesheet" href="/style/index.css">
+  <link rel="stylesheet" href="/style/responsive.css">
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <div class="car"></div>
+  <div class="transform-container"></div>
+  <div class="form-container">
+    <div class="pattern-container">
+      <div class="patter-dot"></div>
+      <div class="patter-dot"></div>
+      <div class="patter-dot"></div>
+      <div class="patter-dot"></div>
+      <div class="patter-dot"></div>
+      <div class="patter-dot"></div>
+      <div class="patter-dot"></div>
+      <div class="patter-dot"></div>
+      <div class="patter-dot"></div>
+    </div>
+    <section class="form-section">
+      <!-- ::before -->
+      <h1 class="form-heading">Login</h1>
+      <form name="login-form" id="login-form" method="POST">
+        <div class="form-field">
+          <label>User Name</label>
+          <input name="username" type="input"/>
+        </div>
+        <div class="form-field">
+          <label>Password</label>
+          <input id="pwd" name="pwd" type="password"/>
+          <button type="button" onclick="showPassword('pwd');">Show Password</button>
+        </div>
+        <div class="form-field">
+          <button type="submit" class="btn">Login</button>
+        </div>
+      </form>
+      <!-- ::after -->
+    </section>
+  </div>
+</body>
+</html>

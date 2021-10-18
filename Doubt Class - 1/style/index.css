@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pattern-container {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: rgb(161, 230, 152);
+}
+
+.patter-dot {
+  margin-top: 10px;
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  background: black;
+}
+
+.car {
+  width: 100px;
+  height: 100px;
+  background: black;
+  animation: carForward 5s infinite;
+  position: relative;
+}
+
+@keyframes carForward {
+  0% {
+    background: green;
+  }
+  25%  {
+    background: yellow;
+  }
+  75%  {
+    background: purple;
+  }
+  100%  {
+    background: red;
+  }
+  from {
+    left: 0px;
+  }
+  to {
+    left: 400px;
+  }
+}
+
+.transform-container {
+  height: 100px;
+  width: 100px;
+  background-color: brown;
+  margin: 60px;
+  transition: transform ease-in 500ms;
+}
+
+.transform-container:hover {
+  transform: rotate(45deg) scale(2,2);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section::before {
+  content: '::before';
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  color: chartreuse;
+}
+
+.form-section::after {
+  content: '::after';
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(27, 4, 49);
+  color: antiquewhite;
+}
+
+.form-heading {
+  text-align: center;
+}
+
+.form-field {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  flex: 0 0 35%;
+}
+
+.form-field .btn {
+  cursor: pointer;
+  width: 100%;
+}

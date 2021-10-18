@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+  .form-container {
+    justify-content: flex-start;
+  }
+
+  .form-heading {
+    text-align: left;
+  }
+
+  .form-field .btn {
+    width: auto;
+  }
+}
