@@ -1,0 +1,3 @@
+for loop
+Array,object,
+functions
