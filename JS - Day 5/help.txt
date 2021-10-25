@@ -1,1 +1,2 @@
 ES5 Class
+JS Closures
